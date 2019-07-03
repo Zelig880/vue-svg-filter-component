@@ -1,18 +1,29 @@
 <template>
-  <div id="app">
-    <HelloWorld>
-      <small>This is my html, passed as a slot with an svg filter on it</small>
-    </HelloWorld>
+  <div id="app">Basic Shape:
+    <basicShape></basicShape>Shape with filter:
+    <shapeWithFilter></shapeWithFilter>Foreing Object:
+    <foreignObject></foreignObject>Final component:
+    <finalComponent>
+      <img src="./assets/logo.png" width="25px" height="25px" alt="Example logo">
+      <h1>My heading</h1>
+      <p>This is my paragraph</p>
+    </finalComponent>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import basicShape from "./components/1.basicShape";
+import shapeWithFilter from "./components/2.shapeWithFilter";
+import foreignObject from "./components/3.foreignObject";
+import finalComponent from "./components/4.finalComponent";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    basicShape,
+    shapeWithFilter,
+    foreignObject,
+    finalComponent
   }
 };
 </script>
@@ -24,5 +35,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 600px;
 }
 </style>
