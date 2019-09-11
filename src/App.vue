@@ -1,13 +1,30 @@
 <template>
-  <div id="app">Basic Shape:
-    <basicShape></basicShape>Shape with filter:
-    <shapeWithFilter></shapeWithFilter>Foreing Object:
-    <foreignObject></foreignObject>Final component:
+  <div id="app">
+    <!-- 
+    Basic Shape:
+    <basicShape></basicShape>
+    -->
+    <!--     
+    Shape with filter: 
+    <shapeWithFilter></shapeWithFilter>
+    -->
+    <!--
+    Foreing Object:
+    <foreignObject></foreignObject>
+    -->
+    <!--
+    Final component:
     <finalComponent>
       <img src="./assets/logo.png" width="25px" height="25px" alt="Example logo">
       <h1>My heading</h1>
-      <p>This is my paragraph</p>
-    </finalComponent>
+    </finalComponent> -->
+    <!--
+    With Animation:
+    <componentWIthAnimation>
+      <img src="./assets/logo.png" width="25px" height="25px" alt="Example logo">
+      <h1>Lets move!</h1>
+    </componentWIthAnimation> 
+    --> 
   </div>
 </template>
 
@@ -16,6 +33,7 @@ import basicShape from "./components/1.basicShape";
 import shapeWithFilter from "./components/2.shapeWithFilter";
 import foreignObject from "./components/3.foreignObject";
 import finalComponent from "./components/4.finalComponent";
+import componentWIthAnimation from "./components/5.componentWIthAnimation";
 
 export default {
   name: "App",
@@ -23,7 +41,8 @@ export default {
     basicShape,
     shapeWithFilter,
     foreignObject,
-    finalComponent
+    finalComponent,
+    componentWIthAnimation
   }
 };
 </script>
