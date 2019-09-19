@@ -7,8 +7,7 @@
     <rect 
       width="225" 
       height="150" 
-      fill="blue" 
-      filter="url(#turbulence)"/>
+      fill="blue"/>
   </svg>
 </template>
 

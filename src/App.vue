@@ -1,30 +1,38 @@
 <template>
   <div id="app">
-    <!-- 
-    Basic Shape:
+<!--     
+    Basic Shape:<br/>
     <basicShape></basicShape>
     -->
     <!--     
-    Shape with filter: 
+    Shape with filter: <br/>
     <shapeWithFilter></shapeWithFilter>
     -->
-    <!--
-    Foreing Object:
+<!--     
+    Foreing Object:<br/>
     <foreignObject></foreignObject>
     -->
-    <!--
-    Final component:
+    
+
+    <!-- With Animation:<br/>
+    <componentWIthAnimation>
+      <img src="./assets/logo.png" width="25px" height="25px" alt="Example logo">
+      <h1>Lets move!</h1>
+    </componentWIthAnimation
+    -->
+<!--     
+    Final component:<br/>
     <finalComponent>
       <img src="./assets/logo.png" width="25px" height="25px" alt="Example logo">
       <h1>My heading</h1>
     </finalComponent> -->
-    <!--
-    With Animation:
-    <componentWIthAnimation>
+
+<!--     
+    Final component with props set:<br/>
+    <finalComponent :animate="true" :filter="true">
       <img src="./assets/logo.png" width="25px" height="25px" alt="Example logo">
-      <h1>Lets move!</h1>
-    </componentWIthAnimation> 
-    --> 
+      <h1>My heading</h1>
+    </finalComponent> -->
   </div>
 </template>
 
@@ -32,8 +40,8 @@
 import basicShape from "./components/1.basicShape";
 import shapeWithFilter from "./components/2.shapeWithFilter";
 import foreignObject from "./components/3.foreignObject";
-import finalComponent from "./components/4.finalComponent";
-import componentWIthAnimation from "./components/5.componentWIthAnimation";
+import componentWIthAnimation from "./components/4.componentWIthAnimation";
+import finalComponent from "./components/5.finalComponent";
 
 export default {
   name: "App",

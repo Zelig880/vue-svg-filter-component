@@ -4,7 +4,7 @@
     height="600" 
     viewBox="0 0 250 250" 
     xmlns="http://www.w3.org/2000/svg">
-    <filter id="turbulence">
+    <filter id="turbulence" v-if="filter">
       <feTurbulence 
         type="turbulence" 
         id="turbulenceFilter" 
@@ -21,7 +21,7 @@
         yChannelSelector="G"
       ></feDisplacementMap>
       
-      <animate 
+      <animate v-if="animate"
         xlink:href="#turbulenceFilter"
         id="animate1" 
         attributeName="baseFrequency"
@@ -31,7 +31,7 @@
         dur="5s"
       />
       
-      <animate 
+      <animate v-if="animate"
         xlink:href="#turbulenceFilter"
         id="animate2" 
         begin="animate1.end"
@@ -62,7 +62,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props:{
+    filter: {
+      default: true,
+      type: Boolean
+    },
+    animate: {
+      default: true,
+      type: Boolean
+    },
+  }
+};
 </script>
 
 <style scoped>

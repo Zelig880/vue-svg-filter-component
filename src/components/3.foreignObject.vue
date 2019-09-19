@@ -29,7 +29,7 @@
       y="10%" 
       width="90%" 
       height="90%">
-      <div class="ciao" style="color:red" xmlns="http://www.w3.org/1999/xhtml">
+      <div class="ciao" xmlns="http://www.w3.org/1999/xhtml">
         <p>The HTML works..</p>
       </div>
     </foreignObject>
@@ -41,5 +41,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+.ciao{
+  color:aqua;
+}
 </style>
